@@ -57,7 +57,7 @@ int main(int argc, char** argv)
     testPerformanceMKL(size, size, size);
     auto end = system_clock::now();
     auto duration = duration_cast<microseconds>(end - start);
-    cout << "openblas with size " << size << " time (ms): ";
+    cout << "openblas with size " << size << " time (us): ";
     cout << duration.count() << endl;
 
     double num_flop = 2.0 * size * size * size;
