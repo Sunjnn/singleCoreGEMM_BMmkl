@@ -16,7 +16,7 @@ Build this project in directory `build`.
 Follow commands below.
 
 ``` bash
-mkdir && cd build
+mkdir build && cd build
 cmake .. --DCMAKE_CXX_COMPILER=icpx
 make
 ```
