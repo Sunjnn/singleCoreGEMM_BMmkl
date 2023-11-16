@@ -61,8 +61,8 @@ int main(int argc, char** argv)
     cout << duration.count() << endl;
 
     double num_flop = 2.0 * size * size * size;
-    double flops = num_flop / duration.count() * 1000;
-    cout << "openblas with size " << size << " flops (flops): ";
+    double flops = num_flop / duration.count() * 1e6;
+    cout << "openblas with size " << size << " performance (FLOPS): ";
     cout << flops << endl << endl << endl;
 
     return 0;
